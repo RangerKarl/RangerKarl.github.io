@@ -37,12 +37,12 @@ roles:
    end: 2017
    employer: Capital Platforms Pte Ltd
    description: Capital Platforms is a financial services provider that specializes in mediating investment purchases with the Bank of Luxembourg, via Moventum S.C.A. Hired as web developer, later moved into database admin role, with some emphasis on web service updates
-- title: Unity Developer
+ - title: Unity Developer
    start: 2016
    end: 2017
    employer: Dekatku Sdn Bhd/INTERROBANG
    description: Hired as Unity dev to prototype Unity augmented reality application, with use of geolocation via unity, and updates to main service via a hosted API site. 
-- title: .Net Programmer
+ - title: .Net Programmer
    start: 2015
    end: 2015
    employer: Mesiniaga Sdn Bhd
@@ -66,7 +66,7 @@ education:
    school: Multimedia University
 
 #This section is optional (as is the image link below)
- coursera:
+coursera:
 #    profileurl: https://www.coursera.org/user/i/c6362b4056f755a04bef6a791a62102b
 #    courses:
 #     - title: Functional Programming Principles in Scala
