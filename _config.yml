@@ -66,7 +66,7 @@ education:
    school: Multimedia University
 
 #This section is optional (as is the image link below)
-coursera:
+# coursera:
 #    profileurl: https://www.coursera.org/user/i/c6362b4056f755a04bef6a791a62102b
 #    courses:
 #     - title: Functional Programming Principles in Scala
@@ -79,7 +79,7 @@ coursera:
 #       date: April 28, 2014
 
 #List of interesting Github repo/projects to include - optional
-github:
+#github:
  #- robhinds/learning-neural-networks
  #- robhinds/akka-http-rest-api-sample
  #- robhinds/twitter-sentiment-analysis
@@ -94,19 +94,19 @@ github:
  #- robhinds/AndroidRssReader
 
 #Stackoverflow flair is optional
-stackoverflow:
+#stackoverflow:
 #   profileurl: http://stackoverflow.com/users/258813/rhinds
 #   flairimageurl: http://stackoverflow.com/users/flair/258813.png
 
 #Mobile apps section is optional
-apps:
+#apps:
 # - name: Chuck the Quiz
 #   platform: Android
 #   url: https://play.google.com/store/apps/details?id=com.tmm.android.chuck&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS50bW0uYW5kcm9pZC5jaHVjayJd
 #   description: A basic early Android app (open sourced)
 
 #An additional info freetext section is optional at the bottom of the page - can be text or HTML
- additionalinfo: |
+#additionalinfo: |
 #    <strong>JVM</strong>: I am experienced in a variety of Java API’s and frameworks. I have recently worked with Spring 4, Spring Boot, JPA (Hibernate and EclipseLink) in addition to others.  In my current role Groovy is the primary language used - and I am familiar with many of the languages features and quirks (including writing <a target='_blank' href="https://dzone.com/articles/functional-programming-groovy">Functional Programming style groovy</a>). <br/><br/>
 #    <strong>Web Development</strong>: My server side web development experience has largely been based on the Spring MVC framework (although current role uses ColdFusion for server side web stack). I have also worked with some client side technology, having used jQuery, Bootstrap, LESS, SASS and have also experimented with other interesting technologies such as Backbone/Underscore/Require.<br/><br/>
 #    <strong>Development Control</strong>: I have a good knowledge of application life-cycle management and have worked with SVN, Git, Maven, Gradle, Sonar and Jenkins. I have experience with an array of testing tools and technologies.<br/><br/>
