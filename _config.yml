@@ -9,8 +9,8 @@ markdown: kramdown
 #User specific content
 #Links that will appear in the navbar
 primarylinks:
- - title: Blog
-   url: -
+ #- title: Blog
+ #  url: https://github.com/RangerKarl
  - title: GitHub
    url: https://github.com/RangerKarl
  - title: LinkedIn
