@@ -7,7 +7,7 @@
     <title>Why this site exists — Khairil Kasimir Isa</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="blog-post-page">
     <header>
         <div class="container">
             <h1><a href="../index.html">Khairil Kasimir Isa</a></h1>
@@ -27,8 +27,8 @@
         </div>
     </nav>
 
-    <main>
-        <div class="container">
+    <main class="blog-article-layout">
+        <div class="container container--reading">
             <header class="post-header">
                 <h1>Why this site exists</h1>
                 <p class="card-meta">5 July 2026</p>
@@ -42,17 +42,18 @@
                 <p>I've had a GitHub Pages repo sitting around for a while with placeholder text and good intentions. Time to actually use it.</p>
 
                 <h2>What I'm trying to do here</h2>
-                <p>This site is a moderate, developer-focused presence — not a portfolio circus. I want a place to:</p>
+                <p>This site is a place for me to vomit out my brainthoughts without having to worry about who gets stepped on. I want a place to:</p>
                 <ul>
-                    <li>Write about backend, infrastructure, and full-stack work in plain language</li>
+                    <li>Write about my work in plain language, whether it be tech centered stuff, or perhaps more personal like game design or worldbuilding</li>
                     <li>Point people at a few projects that show how I think</li>
                     <li>Document what I'm learning while I explore career options</li>
                 </ul>
-                <p>The audience is other developers. If you're evaluating me for a role, the <a href="../about.html" class="text-link">about</a> and <a href="../projects.html" class="text-link">projects</a> pages are probably enough; the blog is for anyone who wants more depth.</p>
+                <p>If you're evaluating me for a role, the <a href="../about.html" class="text-link">about</a> and <a href="../projects.html" class="text-link">projects</a> pages are probably enough; the blog is for anyone who wants more depth.</p>
+                <p> If you're not, I'm not sure why you're here. But if you are, welcome!</p>
 
                 <h2>Why keep the stack boring</h2>
-                <p>Phase 1 is plain HTML and CSS — no build step, deploy on push via GitHub Actions. That's intentional. I'd rather spend time writing than yak-shaving a static site generator until I have enough posts to justify one.</p>
-                <p>The deploy pipeline itself is the kind of infra work I actually enjoy. Here's the core of it:</p>
+                <p>Phase 1 is plain HTML and CSS — no build step, deploy on push via GitHub Actions. Ultimately, I am also using this page to mess around with this GenAI site building trend. I am using Cursor to generate the HTML and CSS, and then I am using the GitHub Actions to deploy the site. Without needing to rely on a proprietary CMS platform I want to see how far I can push things.</p>
+                <p>The deploy pipeline itself is the kind of infra work my AI actually enjoys. Here's the core of it:</p>
                 <pre><code>on:
   push:
     branches: ["master"]
@@ -75,7 +76,7 @@ jobs:
                 <p>Thanks for reading. If something here resonates, <a href="../index.html#contact" class="text-link">get in touch</a>.</p>
             </article>
 
-            <p style="margin-top: 2rem;"><a href="index.html" class="text-link">&larr; Back to blog</a></p>
+            <p class="post-back-link"><a href="index.html" class="text-link">&larr; Back to blog</a></p>
         </div>
     </main>
 
