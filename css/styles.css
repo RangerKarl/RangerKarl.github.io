@@ -73,27 +73,125 @@ main {
     padding: 3rem 0;
 }
 
-.hero {
-    text-align: center;
-    margin-bottom: 4rem;
+.home-main-layout {
+    padding: 0;
+}
+
+.hero-band {
+    width: 100%;
+    background: linear-gradient(135deg, #dce4ed 0%, #e8eef5 50%, #eef1f5 100%);
+    border-bottom: 1px solid #c5d0dc;
+    padding: 3.5rem 0;
+    margin-bottom: 3rem;
+    max-height: 24rem;
+    overflow: hidden;
+    opacity: 1;
+    transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.35s ease, margin 0.35s ease, border-color 0.25s ease;
+}
+
+.hero-band.is-collapsed {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+    pointer-events: none;
+}
+
+.hero-band .hero {
+    text-align: left;
+    margin-bottom: 0;
+    max-width: 720px;
 }
 
 .hero h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin-bottom: 1rem;
     color: #1a1a2e;
+    line-height: 1.25;
 }
 
 .hero p {
     font-size: 1.1rem;
     max-width: 640px;
-    margin: 0 auto 1rem;
+    margin: 0 0 1rem;
 }
 
 .hero .hero-sub {
     font-size: 1rem;
     color: #555;
     margin-bottom: 2rem;
+}
+
+.home-content {
+    padding-bottom: 2rem;
+}
+
+.home-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: stretch;
+}
+
+.home-primary {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.home-sidebar-rail {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #0f7b6c;
+    padding: 1.75rem;
+    min-height: 100%;
+}
+
+.home-sidebar-rail .section-title {
+    margin-bottom: 1.25rem;
+}
+
+.home-sidebar-rail .card-compact {
+    box-shadow: none;
+    background: #f8fafb;
+    border: 1px solid #e8eef3;
+}
+
+.about-teaser-inset {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+.post-stack,
+.sidebar-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card-compact {
+    padding: 1.25rem;
+}
+
+.card-compact h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-compact p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-compact .tag-list {
+    margin-top: 0.5rem;
 }
 
 .cta-button {
@@ -176,9 +274,9 @@ main {
     padding: 2.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
-    max-width: 720px;
+    max-width: 560px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -321,9 +419,60 @@ main {
 }
 
 .post-header h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: #1a1a2e;
     margin-bottom: 0.75rem;
+    line-height: 1.25;
+}
+
+/* Blog reading layout — article fills the viewport */
+.container--reading {
+    max-width: min(960px, 94vw);
+}
+
+.blog-article-layout,
+.blog-list-layout {
+    padding: 2rem 0 3rem;
+}
+
+.blog-post-page header,
+.blog-list-page header {
+    padding: 1.25rem 0;
+}
+
+.blog-post-page header h1,
+.blog-list-page header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.blog-post-page header p,
+.blog-list-page header p {
+    font-size: 0.95rem;
+}
+
+.blog-list-intro {
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.post-back-link {
+    margin-top: 2rem;
+}
+
+.container--reading .post-content {
+    max-width: none;
+    width: 100%;
+    padding: 2.5rem 3rem;
+}
+
+.container--reading .post-header {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.container--reading .blog-post-item {
+    width: 100%;
 }
 
 .post-content {
@@ -457,6 +606,28 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .hero-band {
+        transition: none;
+    }
+}
+
+@media (max-width: 899px) {
+    .home-columns {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .home-sidebar-rail {
+        border-left: none;
+        border-top: 4px solid #0f7b6c;
+    }
+
+    .hero-band .hero h2 {
+        font-size: 1.75rem;
+    }
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -473,5 +644,22 @@ footer a:hover {
 
     .post-content {
         padding: 1.5rem;
+    }
+
+    .container--reading .post-content {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .post-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .blog-post-page header h1,
+    .blog-list-page header h1 {
+        font-size: 1.35rem;
+    }
+
+    .hero-band {
+        padding: 2.5rem 0;
     }
 }

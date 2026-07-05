@@ -27,61 +27,67 @@
         </div>
     </nav>
 
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h2>I build reliable backend systems and the apps that run on them.</h2>
-                <p>IT professional focused on infrastructure, automation, and full-stack delivery. I write about what I'm building and learning as I explore what's next.</p>
-                <p class="hero-sub">Currently exploring new roles where backend depth and practical full-stack work both matter.</p>
-                <a href="blog/welcome.html" class="cta-button">Read the launch post</a>
-            </section>
-
-            <section>
-                <h2 class="section-title">Latest posts</h2>
-                <div class="card-grid">
-                    <article class="card">
-                        <p class="card-meta">5 July 2026</p>
-                        <h3><a href="blog/welcome.html">Why this site exists</a></h3>
-                        <p>A short note on rebooting my personal site as a place for technical writing while I figure out what's next career-wise.</p>
-                        <div class="tag-list">
-                            <span class="tag">learning</span>
-                            <span class="tag">full-stack</span>
-                        </div>
-                        <p><a href="blog/welcome.html" class="card-link">Read more &rarr;</a></p>
-                    </article>
+    <main class="home-main-layout">
+        <section class="hero-band">
+            <div class="container">
+                <div class="hero">
+                    <h2>I build reliable backend systems and the apps that run on them.</h2>
+                    <p>IT professional focused on infrastructure, automation, and full-stack delivery. I write about what I'm building and learning as I explore what's next.</p>
+                    <p class="hero-sub">Currently exploring new roles where backend depth and practical full-stack work both matter.</p>
+                    <a href="blog/welcome.html" class="cta-button">Read the launch post</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <h2 class="section-title">Featured projects</h2>
-                <div class="card-grid">
-                    <article class="card">
-                        <h3><a href="https://github.com/RangerKarl/RangerKarl.github.io">RangerKarl.github.io</a></h3>
-                        <p>This site — static HTML on GitHub Pages with a GitHub Actions deploy pipeline and custom domain via CNAME.</p>
-                        <div class="tag-list">
-                            <span class="tag">GitHub Pages</span>
-                            <span class="tag">GitHub Actions</span>
-                            <span class="tag">HTML/CSS</span>
+        <div class="container home-content">
+            <div class="home-columns">
+                <div class="home-primary">
+                    <section class="home-posts">
+                        <h2 class="section-title section-title-left">Latest posts</h2>
+                        <div class="post-stack">
+                            <article class="card">
+                                <p class="card-meta">5 July 2026</p>
+                                <h3><a href="blog/welcome.html">Why this site exists</a></h3>
+                                <p>A short note on rebooting my personal site as a place for technical writing while I figure out what's next career-wise.</p>
+                                <div class="tag-list">
+                                    <span class="tag">learning</span>
+                                    <span class="tag">full-stack</span>
+                                </div>
+                                <p><a href="blog/welcome.html" class="card-link">Read more &rarr;</a></p>
+                            </article>
                         </div>
-                        <p><a href="projects.html" class="card-link">All projects &rarr;</a></p>
-                    </article>
-                    <article class="card">
-                        <h3>GitHub Pages deploy pipeline</h3>
-                        <p>Automated static deploy on push to <code>master</code> using <code>actions/deploy-pages</code> — no manual uploads, no separate hosting bill.</p>
-                        <div class="tag-list">
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">DevOps</span>
-                            <span class="tag">YAML</span>
-                        </div>
-                        <p><a href="https://github.com/RangerKarl/RangerKarl.github.io/blob/master/.github/workflows/static.yml" class="card-link">View workflow &rarr;</a></p>
-                    </article>
+                    </section>
+
+                    <section class="about-teaser about-teaser-inset">
+                        <p>I've spent my career keeping systems running and building the tools teams depend on — from infrastructure and automation to full-stack web work when the job calls for it.</p>
+                        <p><a href="about.html" class="text-link">More about me &rarr;</a></p>
+                    </section>
                 </div>
-            </section>
 
-            <section class="about-teaser">
-                <p>I've spent my career keeping systems running and building the tools teams depend on — from infrastructure and automation to full-stack web work when the job calls for it.</p>
-                <p><a href="about.html" class="text-link">More about me &rarr;</a></p>
-            </section>
+                <aside class="home-sidebar home-sidebar-rail">
+                    <h2 class="section-title section-title-left">Featured projects</h2>
+                    <div class="sidebar-stack">
+                        <article class="card card-compact">
+                            <h3><a href="https://github.com/RangerKarl/RangerKarl.github.io">RangerKarl.github.io</a></h3>
+                            <p>Static HTML on GitHub Pages with Actions deploy and custom domain.</p>
+                            <div class="tag-list">
+                                <span class="tag">GitHub Pages</span>
+                                <span class="tag">GitHub Actions</span>
+                            </div>
+                        </article>
+                        <article class="card card-compact">
+                            <h3>GitHub Pages deploy pipeline</h3>
+                            <p>Push to <code>master</code>, site updates via <code>deploy-pages</code>.</p>
+                            <div class="tag-list">
+                                <span class="tag">CI/CD</span>
+                                <span class="tag">DevOps</span>
+                            </div>
+                            <p><a href="https://github.com/RangerKarl/RangerKarl.github.io/blob/master/.github/workflows/static.yml" class="card-link">View workflow &rarr;</a></p>
+                        </article>
+                        <p><a href="projects.html" class="text-link">All projects &rarr;</a></p>
+                    </div>
+                </aside>
+            </div>
         </div>
     </main>
 
