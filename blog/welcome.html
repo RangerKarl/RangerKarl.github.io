@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Why this site exists — a launch post by Khairil Kasimir Isa.">
+    <title>Why this site exists — Khairil Kasimir Isa</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html">Khairil Kasimir Isa</a></h1>
+            <p>Backend &amp; infrastructure developer who ships full-stack tools</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html" class="active">Blog</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <header class="post-header">
+                <h1>Why this site exists</h1>
+                <p class="card-meta">5 July 2026</p>
+                <div class="tag-list">
+                    <span class="tag">learning</span>
+                    <span class="tag">full-stack</span>
+                </div>
+            </header>
+
+            <article class="post-content">
+                <p>I've had a GitHub Pages repo sitting around for a while with placeholder text and good intentions. Time to actually use it.</p>
+
+                <h2>What I'm trying to do here</h2>
+                <p>This site is a moderate, developer-focused presence — not a portfolio circus. I want a place to:</p>
+                <ul>
+                    <li>Write about backend, infrastructure, and full-stack work in plain language</li>
+                    <li>Point people at a few projects that show how I think</li>
+                    <li>Document what I'm learning while I explore career options</li>
+                </ul>
+                <p>The audience is other developers. If you're evaluating me for a role, the <a href="../about.html" class="text-link">about</a> and <a href="../projects.html" class="text-link">projects</a> pages are probably enough; the blog is for anyone who wants more depth.</p>
+
+                <h2>Why keep the stack boring</h2>
+                <p>Phase 1 is plain HTML and CSS — no build step, deploy on push via GitHub Actions. That's intentional. I'd rather spend time writing than yak-shaving a static site generator until I have enough posts to justify one.</p>
+                <p>The deploy pipeline itself is the kind of infra work I actually enjoy. Here's the core of it:</p>
+                <pre><code>on:
+  push:
+    branches: ["master"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - uses: actions/deploy-pages@v4</code></pre>
+                <p>Push to <code>master</code>, site updates. Custom domain via CNAME. Nothing clever — and that's the point.</p>
+
+                <h2>What comes next</h2>
+                <p>I'll add posts when I have something worth saying: a pipeline I wired up, a side project postmortem, notes from learning something new. Rough target is one post every month or so once things get moving.</p>
+                <p>When maintaining the blog index by hand gets old — probably around post three or four — I'll migrate to Eleventy and Markdown. Until then, this works.</p>
+                <p>Thanks for reading. If something here resonates, <a href="../index.html#contact" class="text-link">get in touch</a>.</p>
+            </article>
+
+            <p style="margin-top: 2rem;"><a href="index.html" class="text-link">&larr; Back to blog</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Khairil Kasimir Isa. All rights reserved.</p>
+            <div id="contact" class="contact-info footer-contact">
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:ranger.karl@gmail.com">ranger.karl@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/RangerKarl">RangerKarl</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/%F0%9F%A5%AA-khairil-kasimir-isa-062b3545/">Profile</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/%F0%9F%A5%AA-khairil-kasimir-isa-062b3545/">LinkedIn</a>
+                <a href="https://github.com/RangerKarl">GitHub</a>
+            </div>
+            <p class="footer-disclosure">&dagger; Site layout and styling were built with <a href="https://cursor.com">Cursor</a> AI assistance. I'm primarily a backend and infrastructure developer &mdash; don't read too much into the front-end polish.</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

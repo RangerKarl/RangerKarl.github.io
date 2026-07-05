@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Khairil Kasimir Isa — infrastructure, backend, and full-stack work.">
+    <title>Projects — Khairil Kasimir Isa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Khairil Kasimir Isa</a></h1>
+            <p>Backend &amp; infrastructure developer who ships full-stack tools</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2 class="section-title section-title-left">Projects</h2>
+            <p style="margin-bottom: 2rem; max-width: 72ch;">Selected work — infrastructure and backend first, with full-stack projects where I've owned delivery end to end. More repos on <a href="https://github.com/RangerKarl" class="text-link">GitHub</a>.</p>
+
+            <section class="project-section">
+                <h2>Infrastructure &amp; backend</h2>
+
+                <article class="project-card">
+                    <h3>GitHub Pages deploy pipeline</h3>
+                    <p>Automated static-site deployment for this repo: push to <code>master</code>, GitHub Actions builds and publishes to Pages. Uses OIDC permissions, concurrency controls, and the official <code>deploy-pages</code> action — no secrets to rotate for basic hosting.</p>
+                    <div class="tag-list">
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">DevOps</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/RangerKarl/RangerKarl.github.io/blob/master/.github/workflows/static.yml" class="card-link">View workflow &rarr;</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="project-section">
+                <h2>Full-stack &amp; apps</h2>
+
+                <article class="project-card">
+                    <h3>RangerKarl.github.io</h3>
+                    <p>Personal site at <a href="https://www.rangerkarl.llc" class="text-link">www.rangerkarl.llc</a> — multi-page static HTML, custom domain via CNAME, and a blog for technical writing. Deliberately simple: no build step in Phase 1, easy to extend with Eleventy later when post count grows.</p>
+                    <div class="tag-list">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">GitHub Pages</span>
+                        <span class="tag">Static site</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/RangerKarl/RangerKarl.github.io" class="card-link">Repository &rarr;</a>
+                        <a href="https://www.rangerkarl.llc" class="card-link">Live site &rarr;</a>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Khairil Kasimir Isa. All rights reserved.</p>
+            <div id="contact" class="contact-info footer-contact">
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:ranger.karl@gmail.com">ranger.karl@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/RangerKarl">RangerKarl</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/%F0%9F%A5%AA-khairil-kasimir-isa-062b3545/">Profile</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/%F0%9F%A5%AA-khairil-kasimir-isa-062b3545/">LinkedIn</a>
+                <a href="https://github.com/RangerKarl">GitHub</a>
+            </div>
+            <p class="footer-disclosure">&dagger; Site layout and styling were built with <a href="https://cursor.com">Cursor</a> AI assistance. I'm primarily a backend and infrastructure developer &mdash; don't read too much into the front-end polish.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
