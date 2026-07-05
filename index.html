@@ -3,94 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khairil Kasimir Isa - IT Worker</title>
+    <meta name="description" content="Khairil Kasimir Isa — backend and infrastructure developer building full-stack tools.">
+    <title>Khairil Kasimir Isa</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Khairil Kasimir Isa</h1>
-            <p>[YOUR_TAGLINE_OR_PROFESSIONAL_TITLE]</p>
+            <h1><a href="index.html">Khairil Kasimir Isa</a></h1>
+            <p>Backend &amp; infrastructure developer who ships full-stack tools</p>
         </div>
     </header>
-    
+
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
+
     <main>
         <div class="container">
-            <section id="home" class="hero">
-                <h2>Welcome to Khairil Kasimir Isa's Website</h2>
-                <p>Just a grabbag of stuff I couldn't post anywhere.</p>
-                <a href="#contact" class="cta-button">Get In Touch</a>
+            <section class="hero">
+                <h2>I build reliable backend systems and the apps that run on them.</h2>
+                <p>IT professional focused on infrastructure, automation, and full-stack delivery. I write about what I'm building and learning as I explore what's next.</p>
+                <p class="hero-sub">Currently exploring new roles where backend depth and practical full-stack work both matter.</p>
+                <a href="blog/welcome.html" class="cta-button">Read the launch post</a>
             </section>
-            
-            <section class="features">
-                <div class="feature">
-                    <h3>[FEATURE_1_TITLE]</h3>
-                    <p>[FEATURE_1_DESCRIPTION]</p>
-                </div>
-                <div class="feature">
-                    <h3>[FEATURE_2_TITLE]</h3>
-                    <p>[FEATURE_2_DESCRIPTION]</p>
-                </div>
-                <div class="feature">
-                    <h3>[FEATURE_3_TITLE]</h3>
-                    <p>[FEATURE_3_DESCRIPTION]</p>
-                </div>
-            </section>
-            
-            <section id="about" class="about">
-                <h2>About Khairil Kasimir Isa</h2>
-                <p>[YOUR_DETAILED_BIOGRAPHY_OR_ABOUT_TEXT]</p>
-                <p>[ADDITIONAL_INFORMATION_ABOUT_YOUR_BACKGROUND_EXPERIENCE_OR_GOALS]</p>
-                
-                <div class="skills">
-                    <span class="skill-tag">[SKILL_1]</span>
-                    <span class="skill-tag">[SKILL_2]</span>
-                    <span class="skill-tag">[SKILL_3]</span>
-                    <span class="skill-tag">[SKILL_4]</span>
-                    <span class="skill-tag">[SKILL_5]</span>
-                    <span class="skill-tag">[SKILL_6]</span>
+
+            <section>
+                <h2 class="section-title">Latest posts</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <p class="card-meta">5 July 2026</p>
+                        <h3><a href="blog/welcome.html">Why this site exists</a></h3>
+                        <p>A short note on rebooting my personal site as a place for technical writing while I figure out what's next career-wise.</p>
+                        <div class="tag-list">
+                            <span class="tag">learning</span>
+                            <span class="tag">full-stack</span>
+                        </div>
+                        <p><a href="blog/welcome.html" class="card-link">Read more &rarr;</a></p>
+                    </article>
                 </div>
             </section>
-            
-            <section id="contact" class="contact">
-                <h2>Get In Touch</h2>
-                <p>[CONTACT_INVITATION_MESSAGE]</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>Email:</strong> [YOUR_EMAIL_ADDRESS]
-                    </div>
-                    <div class="contact-item">
-                        <strong>Phone:</strong> [YOUR_PHONE_NUMBER]
-                    </div>
-                    <div class="contact-item">
-                        <strong>Location:</strong> [YOUR_LOCATION]
-                    </div>
+
+            <section>
+                <h2 class="section-title">Featured projects</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3><a href="https://github.com/RangerKarl/RangerKarl.github.io">RangerKarl.github.io</a></h3>
+                        <p>This site — static HTML on GitHub Pages with a GitHub Actions deploy pipeline and custom domain via CNAME.</p>
+                        <div class="tag-list">
+                            <span class="tag">GitHub Pages</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <p><a href="projects.html" class="card-link">All projects &rarr;</a></p>
+                    </article>
+                    <article class="card">
+                        <h3>GitHub Pages deploy pipeline</h3>
+                        <p>Automated static deploy on push to <code>master</code> using <code>actions/deploy-pages</code> — no manual uploads, no separate hosting bill.</p>
+                        <div class="tag-list">
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">DevOps</span>
+                            <span class="tag">YAML</span>
+                        </div>
+                        <p><a href="https://github.com/RangerKarl/RangerKarl.github.io/blob/master/.github/workflows/static.yml" class="card-link">View workflow &rarr;</a></p>
+                    </article>
                 </div>
+            </section>
+
+            <section class="about-teaser">
+                <p>I've spent my career keeping systems running and building the tools teams depend on — from infrastructure and automation to full-stack web work when the job calls for it.</p>
+                <p><a href="about.html" class="text-link">More about me &rarr;</a></p>
             </section>
         </div>
     </main>
-    
+
     <footer>
         <div class="container">
-            <p>&copy; [CURRENT_YEAR] Khairil Kasimir Isa. All rights reserved.</p>
-            <div class="social-links">
-                <a href="[YOUR_LINKEDIN_URL]">LinkedIn</a>
-                <a href="[YOUR_GITHUB_URL]">GitHub</a>
-                <a href="[YOUR_TWITTER_URL]">Twitter</a>
-                <a href="[YOUR_PERSONAL_WEBSITE_URL]">Website</a>
+            <p>&copy; 2026 Khairil Kasimir Isa. All rights reserved.</p>
+            <div id="contact" class="contact-info footer-contact">
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:ranger.karl@gmail.com">ranger.karl@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/RangerKarl">RangerKarl</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/%F0%9F%A5%AA-khairil-kasimir-isa-062b3545/">Profile</a>
+                </div>
             </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/%F0%9F%A5%AA-khairil-kasimir-isa-062b3545/">LinkedIn</a>
+                <a href="https://github.com/RangerKarl">GitHub</a>
+            </div>
+            <p class="footer-disclosure">&dagger; Site layout and styling were built with <a href="https://cursor.com">Cursor</a> AI assistance. I'm primarily a backend and infrastructure developer &mdash; don't read too much into the front-end polish.</p>
         </div>
     </footer>
     <script src="js/main.js"></script>
